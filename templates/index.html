@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/style.css" type="text/css">
+    <body style="background-color:#4A6274;"> 
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+          @font-face {
+          font-family: 'JetBrains';
+          src: url('static/JetBrainsMono-Regular.ttf');
+          font-weight: normal;
+          } 
+          h1, h2, h3, p {
+            color: rgb(71, 100, 87);      
+          }
+          </style>      
+    <title>POLYBUZZ</title>
+  </head>
+  <style>
+    body  {
+    background-image: url('static/background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: 100% 100%;
+    font-family: 'JetBrains', sans-serif;
+    }
+        </style>
+
+  <body>
+    <h1>POLYBUZZ</h1>
+    <p style="font-size:85%"> Mic Recording </p>
+   
+    <div id="controls">
+      <button id="recordButton">Record</button>
+      <button id="pauseButton" disabled>Pause</button>
+      <button id="stopButton" disabled>Stop</button>
+     </div>
+     <div id="formats">Format: </div>
+     <p>Recordings:</p>
+     <ol id="recordingsList"></ol>
+     <!-- inserting these scripts at the end to be able to use all the elements in the DOM -->
+     <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+     <script src="static/app.js"></script>
+
+    <br />
+    <p style="font-size:85%">... or upload audio file </p>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+      <input type="file" style="font-family: JetBrains; background-color:#79AEB2" name="file" />
+      <input type="submit" value="Upload Audio File" style="font-family: JetBrains; background-color:#79AEB2">
+    </form>
+      <p style="font-size:85%"> File uploaded: {{ uploadedName }}</p>
+      <br />
+      <form action="{{ url_for('start_process') }}">
+        <button type="submit" style="font-family: JetBrains; background-color:#79AEB2">CONVERT SPEECH > TEXT</button>
+    </form>     
+
+      <script>
+        function recording() {
+          const status = document.getElementById("recording-status");
+          status.style.color = '#E2725A';
+          status.innerHTML = 'Listen your voice...';
+        }
+        function processing() {
+          const status = document.getElementById("process-status");
+          status.style.color = '#E2725A';
+          status.innerHTML = 'Processing your audio...';
+        }        
+      </script>         
+  </body>
+</html>

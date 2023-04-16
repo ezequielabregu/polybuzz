@@ -1,0 +1,102 @@
+/* Set box-sizing to border-box for all elements */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Apply a background color to the entire body */
+  body {
+    background-color: #4a6274;
+    background-image: url('static/background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: 'JetBrains', sans-serif;
+    color: #adefd1ff;
+  }
+  
+  /* Apply font styling to headings and paragraphs */
+  h1, h2, h3, p {
+    font-family: 'JetBrains', sans-serif;
+    font-weight: normal;
+  }
+  
+  /* Apply styling to buttons */
+  button {
+    font-family: 'JetBrains', sans-serif;
+    background-color: #79aeb2;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  /* Reduce the font size for some paragraphs */
+  p[style="font-size:85%"] {
+    font-size: 14px;
+  }
+  
+  /* Reduce the font size for the "File uploaded" paragraph */
+  p[style="font-size:75%"] {
+    font-size: 12px;
+  }
+  
+  /* Style the form and file input */
+  form {
+    display: inline-block;
+    margin: 10px 0;
+  }
+  
+  input[type="file"] {
+    font-family: 'JetBrains', sans-serif;
+    background-color: #79aeb2;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  /* Apply some styling to the recordings list */
+  #recordingsList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #recordingsList li {
+    margin: 10px 0;
+  }
+  
+  /* Apply styling to the "Format" paragraph */
+  #formats {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  
+  /* Apply styling to the "Controls" div */
+  #controls {
+    margin-bottom: 10px;
+  }
+  
+  /* Style the "Convert Speech > Text" button */
+  [type="submit"] {
+    font-family: 'JetBrains', sans-serif;
+    background-color: #79aeb2;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  
