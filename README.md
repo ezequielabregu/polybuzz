@@ -18,13 +18,12 @@ People from all over the world, including students, teachers, writers, and blogg
 
 &nbsp;
 
-**Online demo**:
+## Online demo
 [https://polybuzz.ezequielabregu.com/](https://polybuzz.ezequielabregu.com/)
 
 &nbsp;
 ![polybuzz](/static/polybuzz-demo.png)
 ![result](/static/result.png)
-
 
 ## Features
 
@@ -48,3 +47,22 @@ python app.py
 
 Web browser address:\
 [127.0.0.1:5000](http://127.0.0.1:5000/)
+
+Requires the command-line tool ffmpeg to be installed on your system, which is available from most package managers:
+
+```bash
+# on Ubuntu or Debian
+sudo apt update && sudo apt install ffmpeg
+
+# on Arch Linux
+sudo pacman -S ffmpeg
+
+# on MacOS using Homebrew (https://brew.sh/)
+brew install ffmpeg
+
+# on Windows using Chocolatey (https://chocolatey.org/)
+choco install ffmpeg
+
+# on Windows using Scoop (https://scoop.sh/)
+scoop install ffmpeg
+```
