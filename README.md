@@ -6,7 +6,7 @@
 
 People from all over the world, including students, teachers, writers, and bloggers, use this app on a daily basis. By using this app, you can significantly reduce the amount of effort you put into writing.
 
-This voice-to-text software is particularly helpful for individuals who have difficulty using their hands due to trauma, dyslexia, or other disabilities that limit the use of traditional input devices.
+`Polybuzz` is particularly helpful for individuals who have difficulty using their hands due to trauma, dyslexia, or other disabilities that limit the use of traditional input devices.
 
 ## Translation method
 
@@ -22,23 +22,26 @@ This voice-to-text software is particularly helpful for individuals who have dif
 [https://polybuzz.ezequielabregu.com/](https://polybuzz.ezequielabregu.com/)
 
 &nbsp;
-![Speech Text](/static/speechtext_demo.png)
+![polybuzz](/static/polybuzz-demo.png)
+![result](/static/result.png)
+
 
 ## Features
 
-- Compatible with desktop (Windows, Mac, Linux) and mobile (Android, IOS) web browsers
+- Multi-language recognition
 - Built-in speech recorder & player
 - Audio file uploader
 - Speech to text converter
 - Accurate punctuation
 - Download output text
+- Compatible with desktop (Windows, Mac, Linux) and mobile (Android, IOS) web browsers
   
 ## How to run
 
 ```bash
-mkdir speechtext
-git clone https://github.com/ezequielabregu/speech-text.git
-cd speechtext
+mkdir polybuzz
+git clone https://github.com/ezequielabregu/polybuzz.git
+cd polybuzz
 pip install -r requirements.txt
 python app.py
 ```

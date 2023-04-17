@@ -61,7 +61,7 @@ def processing():
 
 @app.route('/result')
 def result():
-    with open(text_path, 'r') as file:
+    with open(text_path, 'r', encoding='utf-8') as file:
         text = file.read()
         return render_template('result.html', text=text)
 
